@@ -1,8 +1,10 @@
 
+
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overscroll-behavior-x: none;
 }
 
 .page1{
@@ -491,4 +493,236 @@ img{
 
 .copyright{
     margin-top: 100px;
+}
+
+@media(max-width: 576px){
+
+    .page1{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .left{
+        width: 60%;
+        height: 100%;
+    }
+
+    .left h1{
+        font-size: 30px;
+    }
+
+    .left p{
+        font-size: 18px;
+    }
+
+    .left p span{
+        display: flex;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .left button{
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .left img{
+        max-width: 200px;
+        max-height: 200px;
+
+    }
+
+    .right{
+        width: 60%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .right video{
+        max-width: 1000px;
+        max-height: 1000px;
+        padding-top: 50px;
+        margin-left: 50px;
+    }
+
+    .page1-h1{
+        font-size: 25px;
+        padding-top: 200px;
+    }
+
+    .page2{
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 2px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card{
+        padding: 10px;
+    }
+    .card img{
+        padding: 2px;
+        width: 100%;  
+    }
+
+    .content p{
+        padding: 4px;
+        margin-bottom: 2px;
+        width: 100%;
+        font-size: 18px;
+      
+    }
+
+    .page3{
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .leftpage3 img{
+        max-width: 300px;
+
+    }
+
+    .rightpage3{
+        width: 68%;
+    }
+
+    .rightpage3 button{
+        width: 60%;
+        font-size: 15px;
+        padding: 15px;
+        margin-left: 3px;
+    }
+
+    .page4{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .header{
+        width: 70%;
+    }
+
+    .header button{
+        width: 60%;
+        font-size: 15px;
+        padding: 15px;
+        
+    }
+
+    .menu{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card2{
+        margin-top: 20px;
+        max-width: 80%;
+    }
+
+    .card2 img{
+        border-radius: 10px;
+    }
+
+    .page5{
+        width: 70%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .page5text button {
+        width: 40%;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .testimonials{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .rating{
+        width: 80%;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .profile{
+        width: 60%;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .achievement h3{
+        max-width: 450px;
+        padding: 10px;
+        
+       
+    }
+
+    .dropdown{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .dropdownbuttons h1{
+        font-size: 25px;
+    }
+
+    .dropdownbuttons button{
+        width: 25%;
+    }
+
+    .dropdownlist{
+        width: 40%;
+    }
+
+    .family{
+        flex-wrap: wrap;
+       width: 100%;
+       height: 100%;
+    }
+
+    .left button{
+        width: 50%;
+        padding: 10px;
+    }
+
+    .right img{
+        max-width: 400px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerimg img{
+        max-width: 200px;
+    }
+    .footercontent{
+        max-width: 40%;
+    }
+
+   
 }
