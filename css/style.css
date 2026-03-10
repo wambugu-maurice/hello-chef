@@ -4,7 +4,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overscroll-behavior-x: none;
+    overflow-x: hidden;
 }
 
 .page1{
@@ -44,6 +44,13 @@ body{
     color: white;
     font-weight: 600;
 }
+
+.responav {
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
 
 .container{
     height: 85%;
@@ -495,234 +502,404 @@ img{
     margin-top: 100px;
 }
 
-@media(max-width: 576px){
+@media (max-width:1200px){
 
-    .page1{
-        flex-wrap: wrap;
-    }
-
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
     
 
-    .left{
-        width: 60%;
-        height: 100%;
+.list{
+width:80%;
+}
+
+.list button{
+width:30%;
+}
+
+.left img{
+width:300px;
+}
+
+.left p{
+font-size:22px;
+}
+
+.left button{
+width:60%;
+}
+
+.page2{
+flex-wrap:wrap;
+height:auto;
+}
+
+.card{
+width:40%;
+margin:20px auto;
+}
+
+.page3{
+flex-direction:column;
+height:auto;
+}
+
+.rightpage3{
+width:90%;
+}
+
+.leftpage3 img{
+width:90%;
+height:auto;
+}
+
+.menu{
+flex-wrap:wrap;
+height:auto;
+}
+
+.card2{
+width:50%;
+}
+
+.card2 img{
+width:90%;
+margin-left:20px;
+}
+
+.cards{
+flex-wrap:wrap;
+}
+
+.profile{
+width:45%;
+}
+
+.family{
+flex-direction:column;
+height:auto;
+}
+
+.family .right img{
+height:auto;
+}
+
+.footerimg img{
+width:400px;
+}
+
+}
+
+@media (max-width:768px){
+
+    .responav{
+        display: none;
+    }
+    .responav i{
+        display: none;
+    }
+.navbar{
+justify-content:center;
+}
+
+.list{
+flex-wrap:wrap;
+width:100%;
+justify-content:center;
+}
+
+.list li{
+font-size:16px;
+margin:10px;
+}
+
+.list button{
+width:auto;
+padding:10px 20px;
+}
+
+.container{
+flex-direction:column;
+height:auto;
+}
+
+.left{
+width:100%;
+text-align:center;
+}
+
+.left h1{
+margin-left:0;
+}
+
+.left img{
+margin-left:0;
+width:250px;
+}
+
+.left p{
+margin-left:0;
+font-size:20px;
+}
+
+.left button{
+margin-left:0;
+width:70%;
+height:60px;
+}
+
+.right{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.right video{
+width:90%;
+height:auto;
+}
+
+.page1-h1{
+    margin-top: 400px;
+}
+.page2{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:80%;
+}
+
+.rightpage3 button{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.page4{
+height:auto;
+}
+
+.page4 button{
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.menu{
+flex-direction:column;
+}
+
+.card2{
+width:100%;
+}
+
+.card2 img{
+width:85%;
+margin: 10px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.profile{
+width:80%;
+}
+
+.rating button{
+    width: 15%;
+}
+
+.achievement{ 
+    margin-bottom: 200px;
+}
+.dropdownlist{
+width:90%;
+}
+
+.dropdownbuttons button{
+width:auto;
+padding:10px 20px;
+}
+
+.qr{
+flex-direction:column;
+height:auto;
+align-items:center;
+}
+
+.family{
+text-align:center;
+}
+
+.family button{
+    margin-bottom: 20px;
+}
+
+.family img{
+    margin-left: 20px;
+}
+.footercontent{
+flex-direction:column;
+}
+
+.footerimg img{
+width:300px;
+}
+
+}
+
+@media (max-width:480px){
+
+    .navbar{
+        display: none;
     }
 
-    .left h1{
-        font-size: 30px;
-    }
-
-    .left p{
-        font-size: 18px;
-    }
-
-    .left p span{
-        display: flex;
-        font-size: 18px;
-        width: 100%;
-    }
-
-    .left button{
-        width: 60%;
-        font-size: 15px;
-    }
-
-    .left img{
-        max-width: 200px;
-        max-height: 200px;
-
-    }
-
-    .right{
-        width: 60%;
-        height: 100%;
-        flex-wrap: wrap;
-    }
-
-    .right video{
-        max-width: 1000px;
-        max-height: 1000px;
-        padding-top: 50px;
-        margin-left: 50px;
-    }
-
-    .page1-h1{
-        font-size: 25px;
-        padding-top: 200px;
-    }
-
-    .page2{
-        flex-wrap: wrap;
-        margin-top: 30px;
-        padding: 2px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .card{
-        padding: 10px;
-    }
-    .card img{
-        padding: 2px;
-        width: 100%;  
-    }
-
-    .content p{
-        padding: 4px;
-        margin-bottom: 2px;
-        width: 100%;
-        font-size: 18px;
-      
-    }
-
-    .page3{
-        margin-top: 10px;
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-    }
-
-    .leftpage3 img{
-        max-width: 300px;
-
-    }
-
-    .rightpage3{
-        width: 68%;
-    }
-
-    .rightpage3 button{
-        width: 60%;
-        font-size: 15px;
-        padding: 15px;
-        margin-left: 3px;
-    }
-
-    .page4{
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-    }
-
-    .header{
-        width: 70%;
-    }
-
-    .header button{
-        width: 60%;
-        font-size: 15px;
-        padding: 15px;
-        
-    }
-
-    .menu{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .card2{
-        margin-top: 20px;
-        max-width: 80%;
-    }
-
-    .card2 img{
-        border-radius: 10px;
-    }
-
-    .page5{
-        width: 70%;
-        height: 100%;
-        flex-wrap: wrap;
-    }
-
-    .page5text button {
-        width: 40%;
-        font-size: 18px;
-        border-radius: 10px;
-    }
-
-    .testimonials{
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .rating{
-        width: 80%;
-    }
-
-    .cards{
-        flex-wrap: wrap;
-        width: 100%;
-        padding-left: 20px;
-    }
-
-    .profile{
-        width: 60%;
-        border-radius: 10px;
-        padding-left: 10px;
-        margin-bottom: 10px;
-        
-    }
-    .achievement h3{
-        max-width: 450px;
-        padding: 10px;
-        
-       
-    }
-
-    .dropdown{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-    }
-
-    .dropdownbuttons h1{
-        font-size: 25px;
-    }
-
-    .dropdownbuttons button{
-        width: 25%;
-    }
-
-    .dropdownlist{
-        width: 40%;
-    }
-
-    .family{
-        flex-wrap: wrap;
-       width: 100%;
-       height: 100%;
-    }
-
-    .left button{
-        width: 50%;
-        padding: 10px;
-    }
-
-    .right img{
-        max-width: 400px;
-        margin-top: 20px;
-        margin-left: 30px;
-    }
-
-    .footer{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
+    .responav{
         display: flex;
         flex-direction: column;
+        height: max-content;
+        position: relative;
     }
 
-    .footerimg img{
-        max-width: 200px;
-    }
-    .footercontent{
-        max-width: 40%;
+    .hide{
+        display: none;
     }
 
-   
+    .responav:hover>.hide{
+        display: flex;
+        height: max-content;
+        width: 50%;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 30px;
+    
+    }
+    .hide button,
+    .log-in{
+        width: 70%;
+    }
+
+.list{
+flex-direction:column;
+align-items:center;
+}
+
+.list li{
+font-size:15px;
+}
+
+.left img{
+width:200px;
+}
+
+.left p{
+font-size:18px;
+}
+
+.left button{
+width:90%;
+font-size:18px;
+}
+
+h1{
+font-size:28px;
+margin-left:20px;
+}
+
+.content h2{
+font-size:20px;
+}
+
+.content p{
+font-size:16px;
+}
+
+.header p{
+font-size:18px;
+margin-left:20px;
+}
+
+.header button{
+width:70%;
+height:50px;
+}
+
+.card2 .text{
+top:200px;
+left:40px;
+}
+
+.card2 img{
+    margin: 10px;
+}
+.rightpage3 button{
+    width: 60%;
+    padding: 10px;
+}
+
+.page4 button{
+    margin: 15px;
+}
+.page5text{
+margin-left:20px;
+}
+
+.page5text button{
+width:40%;
+
+}
+
+.rating p{
+font-size:20px;
+}
+
+.rating button{
+    width: 19%;
+}
+
+.cards {
+    display: flex;
+}
+
+.family{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.family button{
+    width: 70%;
+
+    margin-bottom: 20px;
+}
+
+.family img{
+    margin-left: 10px;
+}
+
+.achievement h3{
+font-size:20px;
+padding:20px;
+}
+
+.dropdownlist{
+    
+    max-height: fit-content;
+}
+.qr{
+width:90%;
+}
+
+.footerimg img{
+width:220px;
+
+}
+
+.copyright p{
+    margin: 10px auto;
+}
+
 }
